@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  resources :schemes
-  # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
+  resources :schemes do
+    get :top, on: :collection
+  end
 
-  # Defines the root path route ("/")
-  # root "articles#index"
+   root "schemes#index"
 end

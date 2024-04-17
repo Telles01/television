@@ -6,6 +6,12 @@ class SchemesController < ApplicationController
     @schemes = Scheme.all
   end
 
+def top
+  schemes = Scheme.where(rating: 5)
+
+end
+
+
   # GET /schemes/1
   def show
   end

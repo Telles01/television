@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>TOP Schemes</h1>
+
+<div id="schemes">
+  <% @schemes.each do |scheme| %>
+    <%= render scheme %>
+    <p>
+      <%= link_to "Show this scheme", scheme %>
+    </p>
+  <% end %>
+</div>
+
+
