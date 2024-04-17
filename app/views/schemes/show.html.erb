@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @scheme %>
+
+<div>
+  <%= link_to "Edit this scheme", edit_scheme_path(@scheme) %> |
+  <%= link_to "Back to schemes", schemes_path %>
+
+  <%= button_to "Destroy this scheme", @scheme, method: :delete %>
+</div>
