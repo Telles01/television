@@ -7,7 +7,7 @@ class SchemesController < ApplicationController
   end
 
 def top
-  schemes = Scheme.where(rating: 5)
+  @schemes = Scheme.where(rating: 5)
 
 end
 
